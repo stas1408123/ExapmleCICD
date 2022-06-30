@@ -19,13 +19,13 @@ jobs:
         dotnet-version: 6.0.x
     - name: Restore dependencies
       run: |
-           cd ./ExapmleCICD 
+           cd ./ExampleCICD 
            dotnet restore
     - name: Build
       run: |
-           cd ./ExapmleCICD 
+           cd ./ExampleCICD 
            dotnet build --no-restore
     - name: Test
       run: |
-           cd ./ExapmleCICD 
+           cd ./ExampleCICD 
            dotnet test --no-build --verbosity normal
